@@ -23,7 +23,7 @@ body {
   margin-left: 360px;
 }
 .Sidebar {
-  background-color: hsl(206, 92%, 94%);
+  background-color: transparent;
   position: absolute;
   width: 25%;
   height: 100%;
@@ -107,8 +107,6 @@ label {
   }
   .Sidebar {
     margin-top: 80px !important;
-    background-color: hsl(206, 92%, 94%);
-    position: absolute;
     width: 100%;
     height: 20%;
     border-radius: 0%;
@@ -145,8 +143,6 @@ label {
   }
   .Sidebar {
     margin-top: 110px !important;
-    background-color: hsl(206, 92%, 94%);
-    position: absolute;
     width: 100%;
     height: 20%;
     border-radius: 0%;
@@ -191,8 +187,6 @@ label {
   }
   .Sidebar {
     margin-top: 85px !important;
-    background-color: hsl(206, 92%, 94%);
-    position: absolute;
     width: 100%;
     height: 20%;
     border-radius: 0%;
@@ -236,8 +230,6 @@ label {
   }
   .Sidebar {
     margin-top: 135px !important;
-    background-color: hsl(206, 92%, 94%);
-    position: absolute;
     width: 100%;
     height: 20%;
     border-radius: 0%;
