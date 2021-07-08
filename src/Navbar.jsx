@@ -7,7 +7,7 @@ import Sdata from './Sdata'
 
 
 const Navbar = (props) => {
-    const {initialMinute = 2,initialSeconds = 3} = props;
+    const {initialMinute = 2,initialSeconds = 30} = props;
     let [ minutes, setMinutes ] = useState(initialMinute);
     let [seconds, setSeconds ] =  useState(initialSeconds);
     let myInterval;
