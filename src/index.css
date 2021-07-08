@@ -1,13 +1,305 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(206, 92%, 94%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hidden_div {
+  display: none;
+}
+.hidden_divs {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+  display: block;
+  z-index: 5;
+}
+
+.container-fluid {
+  border-bottom: 5px solid turquoise;
+  border-top: 5px solid turquoise;
+  width: 75%;
+  margin-left: 360px;
+}
+.Sidebar {
+  background-color: hsl(206, 92%, 94%);
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  border-radius: 5%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.274);
+  margin-top: 0 !important;
+}
+.question_pallet {
+  margin: 40% 50px;
+}
+.question_numbers {
+  border-radius: 20%;
+  font-size: x-large;
+  padding: 5px 20px;
+  margin: 2px;
+}
+.question_Answered {
+  background-color: yellowgreen;
+  border-radius: 50%;
+  font-size: x-large;
+  padding: 5px 20px;
+  margin: 2px;
+}
+
+.HideResult {
+  display: none;
+}
+.ShowResult {
+  display: block;
+  background-color: rgba(170, 162, 162, 0.788);
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.274);
+  border-radius: 20px;
+}
+.YourResult {
+  font-weight: bolder !important;
+  font-size: xx-large !important;
+}
+.vl {
+  border-left: 4px solid turquoise;
+  height: 500px;
+}
+li {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  list-style: none;
+  cursor: pointer;
+}
+input,
+label {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.Submit_btn {
+  background-color: rgb(39, 158, 90);
+  padding: 5px 25px 5px 25px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.274);
+  margin: 20px;
+  border-radius: 20px;
+}
+.Submit_btn:hover {
+  background-color: rgb(137, 202, 99);
+}
+
+/* ------------------------responsive code----------------------------------------- */
+
+@media (min-width: 768px) and (max-width: 1046px) {
+  .container-fluid {
+    margin-top: 10px;
+    margin-left: auto;
+    width: 100%;
+  }
+  .displayQuestions {
+    margin-top: 330px;
+    margin-left: auto;
+    width: 100%;
+  }
+  .Sidebar {
+    margin-top: 80px !important;
+    background-color: hsl(206, 92%, 94%);
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    border-radius: 0%;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  }
+  .question_pallet {
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .legends {
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+  }
+  .legendAnswer {
+    padding-right: 20px !important;
+    margin-right: 80px !important;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 768px) {
+  .container-fluid {
+    margin-top: 10px;
+    margin-left: auto;
+    width: 100%;
+  }
+  .displayQuestions {
+    margin-top: 340px;
+    margin-left: auto;
+    width: 100%;
+  }
+  .Sidebar {
+    margin-top: 110px !important;
+    background-color: hsl(206, 92%, 94%);
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    border-radius: 0%;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  }
+  .question_pallet {
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .legends {
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+  }
+  .legendAnswer {
+    padding-right: 20px !important;
+    margin-right: 80px !important;
+  }
+  strong {
+    font-size: large;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 1046px) and (max-width: 1200px) {
+  .container-fluid {
+    margin-left: 295px;
+  }
+}
+@media (min-width: 506px) and (max-width: 620px) {
+  .container-fluid {
+    margin-top: 10px;
+    margin-left: auto;
+    width: 100%;
+  }
+  .displayQuestions {
+    margin-top: 320px;
+    margin-left: auto;
+    width: 100%;
+  }
+  .Sidebar {
+    margin-top: 85px !important;
+    background-color: hsl(206, 92%, 94%);
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    border-radius: 0%;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  }
+  .question_pallet {
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .legends {
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+  }
+  .legendAnswer {
+    padding-right: 20px !important;
+    margin-right: 80px !important;
+  }
+  strong {
+    font-size: small;
+  }
+  .question_Answered,
+  .question_numbers {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 506px) {
+  .container-fluid {
+    margin-top: 10px;
+    margin-left: auto;
+    width: 100%;
+  }
+  .displayQuestions {
+    margin-top: 340px;
+    margin-left: auto;
+    width: 100%;
+  }
+  .Sidebar {
+    margin-top: 135px !important;
+    background-color: hsl(206, 92%, 94%);
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    border-radius: 0%;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  }
+  .question_pallet {
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .legends {
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+  }
+  .legendAnswer {
+    padding-right: 20px !important;
+    margin-right: 80px !important;
+  }
+  strong {
+    font-size: small;
+  }
+}
+@media (max-width: 351px) {
+  strong {
+    font-size: x-small;
+  }
+  .m-3 {
+    margin: 10px !important;
+  }
+  .Sidebar {
+    margin-top: 105px !important;
+  }
+  .question_Answered,
+  .question_numbers {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 313px) {
+  h3 {
+    font-size: 1rem;
+  }
+  .displayQuestions {
+    margin-top: 280px;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  #option1,
+  #option2,
+  #option3,
+  #option4 {
+    font-size: 0.8rem;
+  }
+  .legends {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .question_Answered,
+  .question_numbers {
+    font-size: 0.7rem;
+  }
 }
