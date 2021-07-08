@@ -178,7 +178,7 @@ label {
     margin-left: 295px;
   }
 }
-@media (min-width: 506px) and (max-width: 620px) {
+@media (min-width: 494px) and (max-width: 620px) {
   .container-fluid {
     margin-top: 10px;
     margin-left: auto;
@@ -223,7 +223,7 @@ label {
   }
 }
 
-@media (max-width: 506px) {
+@media (max-width: 494px) {
   .container-fluid {
     margin-top: 10px;
     margin-left: auto;
@@ -261,6 +261,10 @@ label {
   }
   strong {
     font-size: small;
+  }
+  .question_numbers,
+  .question_Answered {
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 351px) {
